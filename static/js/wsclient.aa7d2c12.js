@@ -1,0 +1,1 @@
+(()=>{"use strict";var e=new WebSocket("ws://"+window.location.host);e.addEventListener("open",(function(){e.send("[wsclient] Connected with dev server.")})),e.addEventListener("message",(function(e){"reload"===e.data&&(window.location.href=window.location.href)}))})();
